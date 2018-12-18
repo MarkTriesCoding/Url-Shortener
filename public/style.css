@@ -1,0 +1,90 @@
+/****** Main Styling ******/
+
+body {
+	font-family: 'Roboto', sans-serif;
+	font-size: 16px;
+	color: #222;
+	background-color: #FaFaFa;
+	text-align: center;
+	line-height: 1.4em;
+}
+
+.container {
+	padding: 0;
+	margin-top: 40px;
+}
+
+h3 {
+  margin-top: 30px;
+}
+
+.footer {
+	margin-top: 40px;
+}
+
+.user-stories {
+  position: relative;
+  text-align: justify;
+  max-width: 700px;
+  margin: 15px auto;
+}
+code {
+  font-family: monospace;
+  padding: 2px;
+  color: black;
+  background-color: #fff;
+}
+ol {
+	list-style-position: inside;
+}
+ul {
+	list-style-type: none;
+}
+
+li {
+  margin-bottom: 0.5em;
+}
+.user-stories li {
+  margin-bottom: 1em;
+}
+
+a {
+	color: #2574A9;
+}
+
+form {
+  border: solid 1px black;
+  border-radius: 5px;
+  margin: 10px auto;
+  padding: 20px;
+  max-width: 600px;
+}
+
+label {
+  margin-right: 10px;
+}
+
+input,a {
+  padding: 5px;
+}
+
+input[type=text] {
+  width: 220px;
+  text-align: center;
+}
+.button{
+border:1px solid rgba(0,0,0,0.5);
+  text-decoration:none;
+  padding:10px;
+  border-radius:5px;
+  box-shadow:0px 0px 0px 0px black;
+  margin-left:15px;
+  background-color:rgba(0,0,0,0 )
+}
+.button:hover{
+/*   box-shadow:1px 2px 1px -1px black; */
+  background-color:rgba(0,0,0,0.1)
+}
+.button:active, .button:focus{
+  box-shadow:0px 0px 0px 2px rgba(0,0,0,0.3);
+}

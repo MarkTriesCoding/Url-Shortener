@@ -1,1 +1,47 @@
+<!DOCTYPE html>
 
+<html ng-app="shortUrlApp">
+
+   <head>
+      <title>URL Shortener</title>
+      <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet" type="text/css">
+      <link href="/public/style.css" rel="stylesheet" type="text/css">
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.1/angular.js"></script>
+     <script src="public/app.js"></script>
+   </head>
+
+   <body>
+      <div class="container" ng-controller="shortUrlCtrl">
+        <h2>URL Shortener Microservice</h2>
+        <h5>
+        <ul>
+            <li>Node.js</li>
+            <li>Express.js</li>
+            <li>Angular.js</li>
+          </ul>
+       
+        </h5>
+        
+
+        <form action="api/shorturl/new" method="POST">
+          <label for="url_input">URL to be shortened</label>
+          <input id="url_input" type="text" name="url" ng-model="shortenThisUrl" placeholder="https://www.freecodecamp.com">
+          <a class="button" value="POST URL" ng-href="/api/shorturl/new/{{shortenThisUrl}}">Submit</a>
+        </form>
+        
+
+        <h3>Will Redirect from:</h3>
+        <div >
+          {{shortenThisUrl}}
+        </div>
+        <p> </p>
+      </div>
+      <div class="footer">
+        <p>
+          by <a href="http://www.freecodecamp.com/marktriescoding">marktriescoding</a>
+        </p>
+      </div>
+   </body>
+
+
+</html>
